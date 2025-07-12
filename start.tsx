@@ -1,15 +1,9 @@
 import { Button } from '@/components/ui/button';
 import { Link } from 'wouter';
-import { useState, useEffect } from 'react';
 import { useAuth } from '@/hooks/use-auth';
 
 export default function StartPage() {
   const { user } = useAuth();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   return (
     <main className="px-0 py-0 md:py-0 flex-grow font-['Nunito_Sans'] text-[#0A3A68] bg-[#e0f7ff]" id="top">
@@ -129,7 +123,7 @@ export default function StartPage() {
 
           <div className="grid grid-cols-2 gap-4 md:gap-6 max-w-4xl mx-auto">
             {/* Würfelboost Karte */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden text-center p-3 p-md-5">
+            <div className="bg-white rounded-lg shadow-md overflow-hidden text-center p-3 md:p-5">
               <div className="flex justify-center mb-2 md:mb-4">
                 <div className="w-16 h-16 md:w-24 md:h-24 flex items-center justify-center">
                   <img src="/images/Shop-Kategorien/kategorie_wuerfel_trans.png" alt="Würfelboosts" className="h-16 md:h-24 object-contain" />
@@ -143,7 +137,7 @@ export default function StartPage() {
             </div>
 
             {/* Sticker Karte */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden text-center p-3 p-md-5">
+            <div className="bg-white rounded-lg shadow-md overflow-hidden text-center p-3 md:p-5">
               <div className="flex justify-center mb-2 md:mb-4">
                 <div className="w-16 h-16 md:w-24 md:h-24 flex items-center justify-center">
                   <img src="/images/Shop-Kategorien/kategorie_sticker_trans.png" alt="Sticker" className="h-16 md:h-24 object-contain" />
@@ -157,7 +151,7 @@ export default function StartPage() {
             </div>
 
             {/* Partner Event Karte */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden text-center p-3 p-md-5">
+            <div className="bg-white rounded-lg shadow-md overflow-hidden text-center p-3 md:p-5">
               <div className="flex justify-center mb-2 md:mb-4">
                 <div className="w-16 h-16 md:w-24 md:h-24 flex items-center justify-center">
                   <img src="/images/Shop-Kategorien/kategorie_partner_trans.png" alt="Partnerevents" className="h-16 md:h-24 object-contain" />
@@ -171,7 +165,7 @@ export default function StartPage() {
             </div>
             
             {/* Tycoon Racers Karte */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden text-center p-3 p-md-5">
+            <div className="bg-white rounded-lg shadow-md overflow-hidden text-center p-3 md:p-5">
               <div className="flex justify-center mb-2 md:mb-4">
                 <div className="w-16 h-16 md:w-24 md:h-24 flex items-center justify-center">
                   <img src="/images/Shop-Kategorien/kategorie_racers_trans.png" alt="Tycoon Racers" className="h-16 md:h-24 object-contain" />
